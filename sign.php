@@ -30,7 +30,7 @@ function NewUser()
     if($row){
     $id=(int)$row[0]+1;
     }
-    $query    = "INSERTINTO  chat (id,usrname,score,turn) VALUES ('$id','$named','$scored','$turn')";
+    $query    = "INSERT INTO  chat (id,usrname,score,turn) VALUES ('$id','$named','$scored','$turn')";
 
     $data = mysql_query($query) or die(mysql_error());
 
